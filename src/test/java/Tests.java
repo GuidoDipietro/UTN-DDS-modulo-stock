@@ -40,7 +40,6 @@ public class Tests {
 
     @Test
     public void testDescuentoFijo() {
-        double PRECIO_INICIAL = 142749.73;
         Producto compu = new ProductoSimple(
                 "Dell Inspiron 14.27-49",
                 "Una increíble computadora personal para todos los usos que busques.",
@@ -49,7 +48,7 @@ public class Tests {
         );
         Producto compu_menos_1000 = new DescuentoFijo(compu, 1000.0);
 
-        assert compu_menos_1000.precio().equals(PRECIO_INICIAL - 1000);
+        assert compu_menos_1000.precio().equals(compu.precio() - 1000);
     }
 
     @Test
