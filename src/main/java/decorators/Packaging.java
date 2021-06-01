@@ -11,6 +11,6 @@ public class Packaging extends Decorado {
     }
 
     public Double precio() {
-        return this.producto.precio() + precio;
+        return super.producto.precio() + precio;
     }
 }

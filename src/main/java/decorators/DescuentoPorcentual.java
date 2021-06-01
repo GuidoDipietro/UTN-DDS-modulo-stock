@@ -11,6 +11,6 @@ public class DescuentoPorcentual extends Decorado {
     }
 
     public Double precio() {
-        return this.producto.precio() * (1-porcentaje);
+        return super.producto.precio() * (1-porcentaje);
     }
 }

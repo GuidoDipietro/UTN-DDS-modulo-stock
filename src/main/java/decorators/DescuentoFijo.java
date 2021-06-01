@@ -11,6 +11,6 @@ public class DescuentoFijo extends Decorado {
     }
 
     public Double precio() {
-        return this.producto.precio() - this.valor;
+        return super.producto.precio() - this.valor;
     }
 }
